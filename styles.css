@@ -1,0 +1,123 @@
+/* GENERAL */
+:root {
+  /* Farge variabler */
+  --primaryColor: blue;
+  --secondaryColor: yellow;
+  --accentColor: purple;
+  --headingColor: orange;
+  --textColor: pink;
+  --lightBackground: white;
+  --darkBackground: black;
+
+  /* Størrelse variabler */
+  --smallSpace: 8px;
+  --mediumSpace: 16px;
+  --largeSpace: 24px;
+  --gap: 100px;
+  --fullScreen: 100vh;
+
+  /* Skrift variabler */
+  --fontHeading: "Times New Roman";
+  --fontParagraph: "Verdana";
+  --fontSize: 18px;
+}
+
+body {
+  background-color: var(--darkBackground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headingColor);
+}
+
+p,
+li,
+a {
+  color: var(--textColor);
+}
+
+.fiftyFifty {
+  max-width: 50%;
+}
+
+.fullScreen {
+  min-height: var(--fullScreen);
+}
+
+.flexTrueCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HEADER */
+header {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background-color: var(--primaryColor);
+}
+
+.navList {
+  /* display: flex;
+  align-items: center; */
+  gap: 20px;
+  list-style: none;
+}
+
+/* MAIN */
+.sectionHero {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.heroIntro {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+@media (max-width: 426px) {
+  img {
+    max-width: 100%;
+  }
+
+  .heroIntro {
+    flex-direction: column;
+  }
+}
+
+.sectionProjects {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.projectCard {
+  border: 2px black solid;
+  width: 300px;
+}
+
+@media (max-width: 426px) {
+  .sectionProjects {
+    flex-direction: column;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primaryColor);
+}
